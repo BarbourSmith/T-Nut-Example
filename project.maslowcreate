@@ -185,7 +185,7 @@
                     "ioValues": [
                         {
                             "name": "Spacing",
-                            "ioValue": 5
+                            "ioValue": 1
                         },
                         {
                             "name": "Sheet Width",
