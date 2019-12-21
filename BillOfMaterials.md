@@ -2,6 +2,9 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|1/4-20 by 2" Carriage Bolt|1|$0.23|https://www.mcmaster.com/90185a550|
+|1/4 by 3/4 Washer|1|$0.99|https://www.mcmaster.com/91860a029|
+|1/4-20 Locknut|1|$0.04|https://www.mcmaster.com/95615a120|
+|Total: |3|$1.27| |
 
- 3xCOG MSRP: $0.00
+ 3xCOG MSRP: $3.81

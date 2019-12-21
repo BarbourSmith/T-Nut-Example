@@ -10,27 +10,10 @@
             "topLevel": true,
             "allAtoms": [
                 {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 153,
-                    "y": 98,
-                    "uniqueID": 211167,
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 40
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 0.75
-                        }
-                    ]
-                },
-                {
                     "atomType": "Constant",
                     "name": "Wood Thickness",
-                    "x": 56,
-                    "y": 196,
+                    "x": 29,
+                    "y": 207,
                     "uniqueID": 213928,
                     "ioValues": [
                         {
@@ -40,10 +23,41 @@
                     ]
                 },
                 {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 176,
+                    "y": 182,
+                    "uniqueID": 211167,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 0.75
+                        }
+                    ]
+                },
+                {
+                    "atomType": "GitHubMolecule",
+                    "name": "T-Nut Assembly",
+                    "x": 167,
+                    "y": 259,
+                    "uniqueID": 255418,
+                    "projectID": "229474250",
+                    "ioValues": [
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 0.75
+                        }
+                    ]
+                },
+                {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 294,
-                    "y": 113,
+                    "x": 375,
+                    "y": 186,
                     "uniqueID": 209128,
                     "ioValues": [
                         {
@@ -53,16 +67,70 @@
                     ]
                 },
                 {
-                    "atomType": "GitHubMolecule",
-                    "name": "T-Nut Assembly",
-                    "x": 265,
-                    "y": 216,
-                    "uniqueID": 255418,
-                    "projectID": "229474250",
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 364,
+                    "y": 268,
+                    "uniqueID": 140731,
                     "ioValues": [
                         {
-                            "name": "Wood Thickness",
-                            "ioValue": 0.75
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 90
+                        }
+                    ]
+                },
+                {
+                    "atomType": "CutList",
+                    "name": "Add To Cutlist",
+                    "x": 500,
+                    "y": 124,
+                    "uniqueID": 978619,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 735,
+                    "y": 144,
+                    "uniqueID": 603880,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 5",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 6",
+                            "ioValue": 10
+                        }
+                    ],
+                    "removeCutawayGeometry": true
+                },
+                {
+                    "atomType": "CutLayout",
+                    "name": "Cut Layout",
+                    "x": 926,
+                    "y": 222,
+                    "uniqueID": 945742,
+                    "ioValues": [
+                        {
+                            "name": "Spacing",
+                            "ioValue": 5
+                        },
+                        {
+                            "name": "Sheet Width",
+                            "ioValue": 50
+                        },
+                        {
+                            "name": "Sheet Length",
+                            "ioValue": 50
                         }
                     ]
                 },
@@ -76,13 +144,6 @@
             ],
             "allConnectors": [
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 211167,
-                    "ap2ID": 209128
-                },
-                {
                     "ap1Name": "number",
                     "ap2Name": "Wood Thickness",
                     "ap2Primary": false,
@@ -95,6 +156,54 @@
                     "ap2Primary": false,
                     "ap1ID": 213928,
                     "ap2ID": 211167
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 211167,
+                    "ap2ID": 209128
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 255418,
+                    "ap2ID": 140731
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 209128,
+                    "ap2ID": 978619
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 6",
+                    "ap2Primary": false,
+                    "ap1ID": 140731,
+                    "ap2ID": 603880
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 978619,
+                    "ap2ID": 603880
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 603880,
+                    "ap2ID": 945742
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 603880
                 }
             ],
             "fileTypeVersion": 1
